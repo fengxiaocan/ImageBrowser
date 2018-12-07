@@ -1,0 +1,5 @@
+<resources>
+	<string name="sina_refresh_down_push">Pull to refresh</string>
+	<string name="sina_refresh_release">Release the refresh</string>
+	<string name="sina_refreshing">Refreshing</string>
+</resources>

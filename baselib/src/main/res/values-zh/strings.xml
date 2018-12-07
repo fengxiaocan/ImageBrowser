@@ -1,0 +1,5 @@
+<resources>
+	<string name="sina_refresh_down_push">下拉刷新</string>
+	<string name="sina_refresh_release">释放刷新</string>
+	<string name="sina_refreshing">正在刷新</string>
+</resources>

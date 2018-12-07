@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoTabLayout">
+        <attr name="auto_textSize_base_width" format="boolean"></attr>
+    </declare-styleable>
+    <!--圆形指示器-->
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_radius" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_background" format="color|integer" />
+        <attr name="ci_selected_background" format="color|integer" />
+        <attr name="ci_gravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="ci_mode">
+            <enum name="inside" value="0" />
+            <enum name="outside" value="1" />
+            <enum name="solo" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalSelectedView">
+        <!--可见数目-->
+        <attr name="HorizontalSeesize" format="integer" />
+        <!--被选择文字的大小和颜色-->
+        <attr name="HorizontalSelectedTextSize" format="float" />
+        <attr name="HorizontalSelectedTextColor" format="color|reference" />
+
+
+        <!--未被被选择文字的大小和颜色-->
+        <attr name="HorizontalUnselectedTextSize" format="float" />
+        <attr name="HorizontalUnselectedTextColor" format="color|reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MetroLayout">
+        <attr name="metro_divider" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <declare-styleable name="MaskView">
+        <!--蒙版的半径-->
+        <attr name="mask_radiu" format="dimension" />
+        <attr name="mask_left" format="dimension" />
+        <attr name="mask_right" format="dimension" />
+        <attr name="mask_top" format="dimension" />
+        <attr name="mask_bottom" format="dimension" />
+        <!--蒙版的中心x坐标-->
+        <attr name="mask_center_x" format="dimension" />
+        <!--蒙版的中心y坐标-->
+        <attr name="mask_center_y" format="dimension" />
+        <!--蒙版的颜色，默认是透明的-->
+        <attr name="mask_color" format="color" />
+        <!--蒙版的背景色-->
+        <attr name="mask_background_color" format="color" />
+        <attr name="mask_type" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="rect" value="1" />
+            <enum name="round_rect" value="2" />
+            <enum name="oval" value="3" />
+            <enum name="arc" value="4" />
+        </attr>
+        <attr name="mask_square" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedView">
+        <attr name="round_radiu" format="dimension" />
+        <attr name="round_color" format="color" />
+    </declare-styleable>
+
+    <attr name="duration" format="integer" />
+    <attr name="showPainter" format="boolean" />
+    <attr name="showPainterActually" format="boolean" />
+    <attr name="pathStrokeWidth" format="dimension" />
+    <attr name="pathStrokeColor" format="color" />
+    <attr name="paintStrokeWidth" format="dimension" />
+    <attr name="paintStrokeColor" format="color" />
+    <attr name="fillColor" format="color" />
+    <attr name="repeat" format="enum">
+        <enum name="RESTART" value="1" />
+        <enum name="REVERSE" value="2" />
+    </attr>
+
+    <declare-styleable name="TextPathView">
+        <attr name="pathTextSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="autoStart" format="boolean" />
+        <attr name="showInStart" format="boolean" />
+        <attr name="textInCenter" format="boolean" />
+        <attr name="duration" />
+        <attr name="showPainter" />
+        <attr name="showPainterActually" />
+        <attr name="pathStrokeWidth" />
+        <attr name="pathStrokeColor" />
+        <attr name="paintStrokeWidth" />
+        <attr name="paintStrokeColor" />
+        <attr name="repeat" />
+    </declare-styleable>
+
+    <declare-styleable name="PathView">
+        <attr name="duration" />
+        <attr name="showPainter" />
+        <attr name="showPainterActually" />
+        <attr name="pathStrokeWidth" />
+        <attr name="pathStrokeColor" />
+        <attr name="paintStrokeWidth" />
+        <attr name="paintStrokeColor" />
+        <attr name="repeat" />
+    </declare-styleable>
+
+
+    <attr name="shadowColor" format="color" />
+    <attr name="shadowRadius" format="dimension" />
+    <attr name="shapeColor" format="color" />
+    <attr name="shapeRadius" format="dimension" />
+    <declare-styleable name="ShadowView">
+        <attr name="shadowColor" />
+        <attr name="shadowRadius" />
+        <attr name="shapeColor" />
+        <attr name="shapeRadius" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+	<string name="sina_refresh_down_push">プルダウン更新</string>
+	<string name="sina_refresh_release">リリース更新</string>
+	<string name="sina_refreshing">更新している</string>
+</resources>

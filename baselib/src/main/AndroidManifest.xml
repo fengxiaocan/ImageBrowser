@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.baselib" >
+
+    <!--wifi权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!--网络状态变化-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--读写存储卡-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <!-- 多语言设置 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <!--设置启动图标-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <!--悬浮窗-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".log.LogActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".log.HtmlTextActivity"/>
+        <!--网络状态变化-->
+        <receiver android:name=".received.NetBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <!--日志监听-->
+        <receiver android:name=".log.LogReceiver">
+            <intent-filter>
+                <action android:name="action.create.log.button"/>
+                <action android:name="action.show.log.button"/>
+                <action android:name="action.hide.log.button"/>
+                <action android:name="action.cancel.log.button"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+
+</manifest>

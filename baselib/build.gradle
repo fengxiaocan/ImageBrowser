@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //系统的依赖库
+    implementation(rootProject.ext.dependencies.appcompatV7) {
+        transitive = true
+    }
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.cardview
+    implementation rootProject.ext.dependencies.design
+    implementation rootProject.ext.dependencies.constraintlayout
+    /*gson解析*/
+    api rootProject.ext.dependencies.gson
+    /*上拉加载下拉刷新*/
+    api rootProject.ext.dependencies.smartRefreshLayout
+    api rootProject.ext.dependencies.smartRefreshHeader
+    /*viewpagerIndicator*/
+    api rootProject.ext.dependencies.viewPagerIndicator
+    /*侧拉菜单*/
+    api rootProject.ext.dependencies.menudrawer
+    api rootProject.ext.dependencies.kotlin
+    /*郭林数据库*/
+    api rootProject.ext.dependencies.litepal
+    api rootProject.ext.dependencies.emaillibs
+    api rootProject.ext.dependencies.specialView
+    api rootProject.ext.dependencies.roundLayout
+    api rootProject.ext.dependencies.PhotoView
+    //沉浸式工具类
+    api rootProject.ext.dependencies.immersionbar
+    //图片压缩
+    api rootProject.ext.dependencies.tiny
+    api rootProject.ext.dependencies.recyclerhelper
+    api rootProject.ext.dependencies.cardLayout
+    api rootProject.ext.dependencies.fonts
+    api rootProject.ext.dependencies.shadowLayout
+}
+repositories {
+    mavenCentral()
+}

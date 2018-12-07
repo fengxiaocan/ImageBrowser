@@ -1,0 +1,5 @@
+<resources>
+	<string name="sina_refresh_down_push">下拉重繪</string>
+	<string name="sina_refresh_release">釋放重繪</string>
+	<string name="sina_refreshing">正在重繪</string>
+</resources>

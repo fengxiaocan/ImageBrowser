@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+	<color name="ios_sheet_stroke">#999</color>
+	<color name="colorAlertBg">#EEEAE9</color>
+	<color name="colorAlertBgPressed">#D6D3D6</color>
+	<color name="colorLineGray">#DCDCDC</color>
+	<color name="alertdialog_line">#c6c6c6</color>
+	<color name="actionsheet_blue">#037BFF</color>
+	<color name="actionsheet_red">#FD4A2E</color>
+	<color name="actionsheet_gray">#8F8F8F</color>
+	<color name="colorAlertButton">#1382FF</color>
+    <!-- 暗宝石绿 -->
+	<color name="deepskyblue">#00bfff</color>
+	<color name="log_debug_color">#1382FF</color>
+	<color name="log_error_color">#F23030</color>
+	<color name="log_verbose_color">#4CAF50</color>
+	<color name="log_warn_color">#FAB521</color>
+	<color name="log_info_color">#eb6fa7</color>
+
+	<color name="rosepink">#F15352</color>
+</resources>

@@ -1,0 +1,242 @@
+ext {
+    isAlone = false //false:作为Lib组件存在，true:作为application存在
+
+    // 各个组件版本号的统一管理
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : '1.0.0',
+    ]
+
+//            com.android.support:support-compat      -->   androidx.core:core:1.0.0+
+//            com.android.support:appcompat-v7        -->   androidx.appcompat:appcompat:1.0.0+
+//            com.android.support:design              -->   com.google.android.material:material:1.0.0+
+//            com.android.support:multidex            -->   androidx.multidex:multidex:2.0.0+
+//            com.android.support:recyclerview-v7     -->   androidx.legacy:legacy-support-v4:1.0.0+
+//            com.android.support:viewpager           -->   androidx.viewpager:viewpager:1.0.0+
+//            com.android.support:support-fragment    -->   androidx.fragment:fragment:1.0.0+
+    libsVersion = [
+            //代替所有的support版本
+            kotlin_version = "1.3.10",
+
+            androidx = "latest.release",
+
+            // Android依赖库版本号的管理
+            supportLibraryVersion = "latest.release",
+            support_v4 = "latest.release",
+            constraintlayout = "1.1.3",
+            /*google bottom-navigation-bar 底部导航栏*/
+            bottomnavigationbar = "latest.release",
+            /*APPbar扩展导航栏*/
+            smoothAppBarLayout = "latest.release",
+            flexbox = "1.0.0",
+            gridlayout = "28.0.0-rc01",
+
+            specialView = "v1.0.9",
+            //沉浸式工具类
+            immersionbar = "latest.release",
+
+            cardLayout = "v1.0.0",
+            shadowLayout = "v1.0.2",
+
+            //网络访问框架
+            retrofitVersion = "latest.release",
+            retrofitGson = "latest.release",
+            rxjava = "latest.release",
+            rxjava_android = "latest.release",
+            okhttp3 = "latest.release",
+            //图片加载框架
+            glideVersion = "latest.release",
+            //eventbus
+            eventbus = "3.1.1",
+            //gson
+            gsonVersion = "latest.release",
+            //文件下载器
+            filedown = "latest.release",
+            /*郭霖数据库操作工具*/
+            litepal = "2.0.0",
+            /*滑动删除*/
+            sdlv = "latest.release",
+
+            /*第三方图片加载*/
+            glide = "2.0.1",
+            glidelib = "1.3.0",
+            /*圆形图*/
+            circleimageview = "latest.release",
+            //视频播放器
+            jiecaovideoplayer = "latest.release",
+            /*图片缩放控件*/
+            PhotoView = "2.0.0",
+            /*图片压缩*/
+            tiny = "latest.release",
+            /*二维码*/
+            zxing = "latest.release",
+            //时间选择器
+            pickerview = "latest.release",
+            pickerwheelview = "latest.release",
+            /*裁剪图片*/
+            cropview = "latest.release",
+            /*下拉刷新组件*/
+            tkrefreshlayout = "latest.release",
+            /*viewpager indicator*/
+            ViewPagerIndicator = "latest.release",
+            /*侧滑菜单*/
+            menudrawer = "latest.release",
+            /*智能刷新控件*/
+            SmartRefreshLayout = "1.1.0-alpha-3",
+            /*智能刷新控件header*/
+            SmartRefreshHeader = "1.1.0-alpha-3",
+            /*
+             * https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+             * RecyclerView 帮助类
+             */
+            baseCecycleHepler = "latest.release",
+            //一个iOS风格的边缘滚动效果，支持几乎所有滚动视图
+            //https://github.com/EverythingMe/overscroll-decor
+            overscroll_decor = "latest.release",
+            //一个提供了上下拖拽的功能组件，能够进行高度自定义，实现各种下拉\上拉动画效果
+            //https://github.com/liaoinstan/SpringView
+            springview = "latest.release",
+            //Android流式布局，支持单选、多选等，适合用于产品标签等。
+            //https://github.com/hongyangAndroid/FlowLayout
+            flowlayout = "latest.release",
+            //一个圆角图片
+//            RoundImageView = "latest.release",
+            //RecyclerView侧滑菜单，Item拖拽，滑动删除Item，自动加载更多，HeaderView，FooterView，Item分组黏贴。
+            // https://github.com/yanzhenjie/SwipeRecyclerView
+            swiperecyclerview = "latest.release",
+            emaillibs = "latest.release",
+
+            //阿里组件化框架依赖包
+            arouterApi = "1.4.1",
+            arouterCompiler = "1.2.2",
+            //google degger
+            dagger2 = "latest.release",
+            dagger2_compiler = "latest.release",
+
+            /*环信需要的依赖库*/
+            hxSdkLite = "3.4.2",
+
+            //高德地图
+            gaodemap = "latest.integration",
+            //图片选择器
+            rxgalleryfinal = "latest.release",
+            //视频播放器
+            nice_vieo_player = "latest.release",
+            //圆角布局
+            roundLayout = "v1.0.7",
+            //键盘与面板
+            smoothinputlayout = "latest.release",
+            recyclerhelper = "v1.2.7",
+            fonts = "2.3.0",
+    ]
+//            com.android.support:support-compat      -->   androidx.core:core:1.0.0+
+//            com.android.support:appcompat-v7        -->   androidx.appcompat:appcompat:1.0.0+
+//            com.android.support:design              -->   com.google.android.material:material:1.0.0+
+//            com.android.support:multidex            -->   androidx.multidex:multidex:2.0.0+
+//            com.android.support:recyclerview-v7     -->   androidx.legacy:legacy-support-v4:1.0.0+
+//            com.android.support:viewpager           -->   androidx.viewpager:viewpager:1.0.0+
+//            com.android.support:support-fragment    -->   androidx.fragment:fragment:1.0.0+
+    // 依赖库管理
+    dependencies = [
+            appcompatV7         : "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion",
+            appcompat           : "com.android.support:support-compat:$rootProject.androidx",
+            design              : "com.android.support:design:28.0.0",
+            recyclerview        : "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion",
+            viewpager           : "com.android.support:viewpagerr:$rootProject.supportLibraryVersion",
+            fragment            : "com.android.support:support-fragment:$rootProject.supportLibraryVersion",
+            multidex            : "com.android.support:multidex:$rootProject.supportLibraryVersion",
+
+            kotlin              : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlin_version",
+
+            cardview            : "com.android.support:cardview-v7:$rootProject.supportLibraryVersion",
+            gridlayoutV7        : "com.android.support:gridlayout-v7:$rootProject.gridlayout",
+            palette             : "com.android.support:palette-v7:$rootProject.supportLibraryVersion",
+            //字体库全局修改
+            fonts               : "uk.co.chrisjenx:calligraphy:$rootProject.fonts",
+
+            annotations         : "com.android.support:support-annotations:$rootProject.supportLibraryVersion",
+            constraintlayout    : "com.android.support.constraint:constraint-layout:$rootProject.constraintlayout",
+            support_v4          : "com.android.support:support-v4:$rootProject.support_v4",
+            bottomnavigationbar : "com.ashokvarma.android:bottom-navigation-bar:$rootProject.bottomnavigationbar",
+            smoothAppBarLayout  : "me.henrytao:smooth-app-bar-layout:$rootProject.smoothAppBarLayout",
+            flexbox             : "com.google.android:flexbox:$rootProject.flexbox",
+
+            specialView         : "com.github.fengxiaocan:SpecialView:$rootProject.specialView",
+            recyclerhelper      : "com.github.fengxiaocan:RecyclerHelper:$rootProject.recyclerhelper",
+            immersionbar        : "com.gyf.immersionbar:immersionbar:$rootProject.immersionbar",
+            //一个扩张CardView 布局
+            cardLayout          : "com.github.fengxiaocan:CardLayout:$rootProject.cardLayout",
+            //阴影布局
+            shadowLayout        : "com.github.fengxiaocan:ShadowLayout:$rootProject.shadowLayout",
+
+
+            eventBus            : "org.greenrobot:eventbus:$rootProject.eventbus",
+            glide               : "com.github.bumptech.glide:glide:$rootProject.glideVersion",
+            gson                : "com.google.code.gson:gson:$rootProject.gsonVersion",
+            filedown            : "com.liulishuo.filedownloader:library:$rootProject.filedown",
+            litepal             : "org.litepal.android:core:$rootProject.litepal",
+            //Retrofit
+            retrofit2           : "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion",
+            retrofit2Gson       : "com.squareup.retrofit2:converter-gson:$rootProject.retrofitGson",
+            rxjava2             : "io.reactivex.rxjava2:rxjava:$rootProject.rxjava",
+            rxjava2_android     : "io.reactivex.rxjava2:rxandroid:$rootProject.rxjava_android",
+            okhttp3             : "com.squareup.okhttp3:okhttp:$rootProject.okhttp3",
+            sdlv                : "com.yydcdut.sdlv:sdlv:$rootProject.sdlv",
+            glide_transformation: "jp.wasabeef:glide-transformations:$rootProject.glide",
+            glidelib            : "jp.co.cyberagent.android.gpuimage:gpuimage-library:$rootProject.glidelib",
+            circleimageview     : "de.hdodenhof:circleimageview:$rootProject.circleimageview",
+            jiecaovideoplayer   : "fm.jiecao:jiecaovideoplayer:$rootProject.jiecaovideoplayer",
+            PhotoView           : "com.github.chrisbanes:PhotoView:$rootProject.PhotoView",
+            tiny                : "com.zxy.android:tiny:$rootProject.tiny",
+            zxing               : "cn.yipianfengye.android:zxing-library:$rootProject.zxing",
+            pickerview          : "com.contrarywind:Android-PickerView:$rootProject.pickerview",
+            pickerwheelview     : "com.contrarywind:wheelview:$rootProject.pickerwheelview",
+            cropview            : "com.oginotihiro:cropview:$rootProject.cropview",
+            tkrefreshlayout     : "com.lcodecorex:tkrefreshlayout:$rootProject.tkrefreshlayout",
+            viewPagerIndicator  : "com.shizhefei:ViewPagerIndicator:$rootProject.ViewPagerIndicator",
+            menudrawer          : "net.simonvt.menudrawer:menudrawer:$rootProject.menudrawer",
+            baseCecycleHepler   : "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.baseCecycleHepler",
+            //键盘面板
+            smoothinputlayout   : "am.widget:smoothinputlayout:$rootProject.smoothinputlayout",
+
+            //智能刷新控件 https://github.com/scwang90/SmartRefreshLayout
+            smartRefreshLayout  : "com.scwang.smartrefresh:SmartRefreshLayout:$rootProject.SmartRefreshLayout",
+            smartRefreshHeader  : "com.scwang.smartrefresh:SmartRefreshHeader:$rootProject.SmartRefreshHeader",//没有使用特殊Header，可以不加这行
+
+            overscroll_decor    : "me.everything:overscroll-decor-android:$rootProject.overscroll_decor",
+            springview          : "com.liaoinstan.springview:library:$rootProject.springview",
+            flowlayout          : "com.hyman:flowlayout-lib:$rootProject.flowlayout",
+//            RoundImageView    : "com.makeramen:RoundImageView:$rootProject.RoundImageView",
+            swiperecyclerview   : "com.yanzhenjie:recyclerview-swipe:$rootProject.swiperecyclerview",
+
+            emaillibs           : "com.github.fengxiaocan:Emaillibs:$rootProject.emaillibs",
+
+            arouterApi          : "com.alibaba:arouter-api:$rootProject.arouterApi",
+            arouterCompiler     : "com.alibaba:arouter-compiler:$rootProject.arouterCompiler",
+            //google degger2
+            googleDagger        : "com.google.dagger:dagger:$rootProject.dagger2",
+            googleDaggerCompiler: "com.google.dagger:dagger-compiler:$rootProject.dagger2_compiler",
+            /*环信*/
+            hxSdkLite           : "com.hyphenate:hyphenate-sdk-lite:$rootProject.hxSdkLite",
+            //高德2D地图
+            gaodeMap2d          : "com.amap.api:map2d:$rootProject.gaodemap",
+            //高德3D地图
+            gaodeMap3d          : "com.amap.api:3dmap:$rootProject.gaodemap",
+            //高德导航
+            gaodeMapNavi        : "com.amap.api:navi-3dmap:$rootProject.gaodemap",
+            //高德搜索
+            gaodeMapSearch      : "com.amap.api:search:$rootProject.gaodemap",
+            //高德定位
+            gaodeMapLocation    : "com.amap.api:location:$rootProject.gaodemap",
+            //图片选择
+            rxgalleryfinal      : "cn.finalteam.rxgalleryfinal:library:$rootProject.rxgalleryfinal",
+            //视频播放器
+            niceVieoPlayer      : "com.github.xiaoyanger0825:NiceVieoPlayer:$rootProject.nice_vieo_player",
+            //圆角布局
+            roundLayout         : "com.github.fengxiaocan:RoundLayout:$rootProject.roundLayout",
+    ]
+}
