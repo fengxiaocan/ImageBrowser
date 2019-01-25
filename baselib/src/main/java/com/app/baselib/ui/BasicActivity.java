@@ -16,7 +16,6 @@ import android.view.WindowManager;
 import com.app.baselib.AdapterUtils;
 import com.app.baselib.intface.IHandler;
 import com.app.baselib.intface.IRequestPermission;
-import com.app.baselib.manager.FontRouter;
 import com.app.baselib.pmsion.PermissionsUtils;
 import com.app.baselib.util.HandlerUtils;
 import com.app.baselib.util.ToastUtils;
@@ -46,7 +45,6 @@ public class BasicActivity extends AppCompatActivity implements View.OnClickList
 	protected void attachBaseContext(Context newBase) {
 		super.attachBaseContext(newBase);
 		//		super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
-		FontRouter.attachBaseActivity(this);
 	}
 	
 	@Override

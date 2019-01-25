@@ -9,7 +9,6 @@ import android.os.Looper;
 import android.os.Message;
 
 import com.app.baselib.intface.IHandler;
-import com.app.baselib.manager.FontRouter;
 import com.app.baselib.util.AppUtils;
 import com.app.baselib.util.HandlerUtils;
 import com.scwang.smartrefresh.header.MaterialHeader;
@@ -91,17 +90,14 @@ public class BaseApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		FontRouter.initFont(this);
 		AdapterUtils.initDensity(this);
 		if (interceptOtherProcess()) {
 			if (getPackageName().equals(AppUtils.getProcessName(this))) {
 				initCreate();
-				registerActivityLifecycleCallbacks(new ActivityLifecycleAdapter());
 			}
 		}
 		else {
 			initCreate();
-			registerActivityLifecycleCallbacks(new ActivityLifecycleAdapter());
 		}
 	}
 	

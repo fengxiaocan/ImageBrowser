@@ -6,10 +6,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 
-import com.ashokvarma.bottomnavigation.utils.Utils;
+import com.app.baselib.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.evil.imagebrowser.network.cookie.CookiesSqlOpenHelper.COOKIES_SQL_TABLE_NAME;
 
 
 /**

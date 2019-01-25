@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="image" />
+    <version value="7" />
+
+    <list>
+        <mapping class="com.evil.imagebrowser.bean.TagsBean" />
+    </list>
+</litepal>

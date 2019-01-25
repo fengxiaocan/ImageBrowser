@@ -7,7 +7,6 @@ import com.app.baselib.util.NetworkUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.app.base.intface.HandlerCode.Companion;
 import static com.app.baselib.intface.INetStatu.NETWORK_MOBILE;
 import static com.app.baselib.intface.INetStatu.NETWORK_WIFI;
 
@@ -74,13 +73,13 @@ public class NetConfig implements NetStatuChangeListener {
         isMobileNet = netChange == NETWORK_MOBILE;
         if (isWifiNet) {
             //网络不可用
-            HandlerUtils.sendEmptyMessage(Companion.NET_WORK_CONNECT_WIFI);
+            HandlerUtils.sendEmptyMessage(NetworkCode.NET_WORK_CONNECT_WIFI);
             //            HandlerUtils.sendEmptyMessage(NET_WORK_CONNECT);
         } else if (isMobileNet) {
-            HandlerUtils.sendEmptyMessage(Companion.NET_WORK_CONNECT_MOBILE);
+            HandlerUtils.sendEmptyMessage(NetworkCode.NET_WORK_CONNECT_MOBILE);
             //            HandlerUtils.sendEmptyMessage(NET_WORK_CONNECT);
         } else {
-            HandlerUtils.sendEmptyMessage(Companion.NET_WORK_ERROR);
+            HandlerUtils.sendEmptyMessage(NetworkCode.NET_WORK_ERROR);
         }
     }
 

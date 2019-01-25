@@ -18,8 +18,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.app.baselib.manager.FontRouter;
-
 /**
  * @项目名： BaseApp
  * @包名： com.dgtle.baselib.util
@@ -418,8 +416,7 @@ public class ViewUtils {
 	}
 	
 	public static void setBoldText(TextView view,boolean isBold) {
-//		view.getPaint().setFakeBoldText(isBold);
-		FontRouter.changeFont(view,isBold);
+		view.getPaint().setFakeBoldText(isBold);
 	}
 	
 	/**

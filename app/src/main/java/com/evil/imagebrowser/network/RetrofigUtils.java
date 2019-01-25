@@ -1,10 +1,10 @@
 package com.evil.imagebrowser.network;
 
-import com.app.base.Api;
 import com.app.baselib.gson.GsonUtils;
 import com.app.baselib.util.Utils;
-import com.dgtle.network.cookie.CookiesManager;
-import com.dgtle.network.cookie.PersistentCookieStore;
+import com.evil.imagebrowser.api.API;
+import com.evil.imagebrowser.network.cookie.CookiesManager;
+import com.evil.imagebrowser.network.cookie.PersistentCookieStore;
 
 import java.util.concurrent.TimeUnit;
 
@@ -35,7 +35,7 @@ public class RetrofigUtils {
 		if (Utils.IsAppDebug()) {
 			builder.addInterceptor(new HttpLogInterceptor(HttpLogInterceptor.Level.BODY));
 		}
-		Retrofit retrofit = new Retrofit.Builder().baseUrl(Api.Companion.BASE_URL)
+		Retrofit retrofit = new Retrofit.Builder().baseUrl(API.BASE_API)
 		                                          .client(builder.build()).addConverterFactory(
 						GsonConverterFactory.create(GsonUtils.getGson())).build();
 		return retrofit.create(service);
